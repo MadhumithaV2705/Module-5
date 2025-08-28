@@ -39,10 +39,39 @@ To write a Python program to get the name, age, and ID of a person and display t
 ### PROGRAM
 
 ```
+Reg.No: 212223060145
+Nmae: Madhumitha V
 
+class person:
+    def __init__(self):
+        self.name=""
+    def get_name(self):
+        self.name=input()
+class age(person):
+    def __init__(self):
+        super().__init__()
+        self.age=0
+    def get_age(self):
+        self.age=int(input())
+class city(age):
+    def __init__(self):
+        super().__init__()
+        self.city=""
+    def get_city(self):
+        self.city=input()
+    def display(self):
+        print(self.name, self.age, self.city)
+
+obj=city()
+obj.get_name()
+obj.get_age()
+obj.get_city()
+obj.display()
 
 ```
 
 ### OUTPUT
+<img width="661" height="211" alt="image" src="https://github.com/user-attachments/assets/efa5c197-fee2-4c06-bb11-31cc73e4075d" />
 
 ### RESULT
+Thus,a Python program to get the name, age, and location of a person and display them using multilevel inheritance are verified.
